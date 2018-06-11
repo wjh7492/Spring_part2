@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>파일 올리기</title>
-<script type="text/javascript" src="/test/webjars/jquery/3.3.1/dist/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/test/webjars/jquery/3.3.1/dist/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("form").submit(function(event){
@@ -28,10 +28,10 @@
 				  });
 			});
 		});		
-	</script>
+	</script> -->
 </head>
 <body>
-	<form action="http://fileserver/FileUpload/resources/temp" enctype="multipart/form-data" method="post">
+	<form action="http://fileserver/FileUpload/temp" enctype="multipart/form-data" method="post">
 		<input type="file" name="file" id="file" multiple="multiple"><br>
 		<input type="submit" value="파일업로드">
 	</form>
