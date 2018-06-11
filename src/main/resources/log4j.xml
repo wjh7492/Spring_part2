@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.java.test">
+	<logger name="com.gudi.file">
 		<level value="info" />
 	</logger>
 	
