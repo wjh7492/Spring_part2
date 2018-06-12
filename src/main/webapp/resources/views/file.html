@@ -3,38 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>파일 올리기</title>
-<!-- <script type="text/javascript" src="/test/webjars/jquery/3.3.1/dist/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("form").submit(function(event){
-				event.preventDefault();
-				$.ajax({
-					  type: "post",
-					  url: "http://fileserver/resources/temp/",
-					  //url: "/test/file/temp",
-					  data: new FormData($(this)[0]),
-					  cache : false,
-				      contentType : false,
-				      processData : false
-				  }).done(function(data) {
-					  var json = JSON.parse(data);
-					  var list = json.upload;
-					  console.log(list);
-					  for(var i = 0 ; i < list.length; i++){
-						  console.log(list[i].fileUrl);
-						  var html = "<img src=" + list[i].fileUrl + " width='100'><br>";
-						  $("#view").append(html);
-					  }
-				  });
-			});
-		});		
-	</script> -->
 </head>
 <body>
-	<form action="/FileUpload/temp" enctype="multipart/form-data" method="post">
+	<!-- <form action="/FileUpload/temp" enctype="multipart/form-data" method="post"> -->
+	<form action="http://localhost:8080/test/FileUpload/temp" enctype="multipart/form-data" method="post">
+		<input type="text" name="boardNo" value="4"><br>
+		<input type="text" name="userNo" value="1"><br>
 		<input type="file" name="file" id="file" multiple="multiple"><br>
 		<input type="submit" value="파일업로드">
 	</form>
-	<div id="view"></div>
 </body>
 </html>
